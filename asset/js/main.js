@@ -45,8 +45,8 @@ const { createApp } = Vue
       },
       intervallo(){
         setInterval(()=>{
-            this.incrementActive
-        },100)
+            this.incrementActive()
+        },3000)
       }
     },
     mounted() {
