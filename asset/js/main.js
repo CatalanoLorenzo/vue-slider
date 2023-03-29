@@ -28,7 +28,6 @@ const { createApp } = Vue
             }
         ],
         idInterval: null,
-        hover: false
       }
     },
     methods: {
@@ -49,20 +48,12 @@ const { createApp } = Vue
             this.incrementActive()
         },300)
         console.log('start interval');
-        this.hover = false
       },
       stopInterval(){
         console.log('stop interval')
         clearInterval(this.idInterval)
-        this.hover = true
       },
-      hoverF(){
-        if (this.hover = true) {
-            this.intervallo()
-        }else{
-            this.stopInterval()
-        }
-      }
+
     },
     mounted() {
         this.intervallo()
