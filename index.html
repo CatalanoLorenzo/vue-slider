@@ -30,11 +30,12 @@
                 <div class="col-2">
                     <!-- incremen button -->
                     <button @click="incrementActive">
-                        <i class="fa-solid fa-circle-arrow-up"></i>
+                        <i class="fa-solid fa-circle-arrow-down"></i>
                     </button>
                     <!-- deincrement button -->
                     <button @click="deincrementActive">
-                        <i class="fa-solid fa-circle-arrow-down"></i>
+                        <i class="fa-solid fa-circle-arrow-up"></i>
+
                     </button>
                     <!-- image list -->
                     <img :src="'./asset/' + image.image"  v-for="(image, index) in images" :alt="image.title">

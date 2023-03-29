@@ -32,9 +32,15 @@ const { createApp } = Vue
     methods: {
       incrementActive() {
         this.active++
+        if(this.active == this.images.length){
+            this.active = 0
+        }
       },
       deincrementActive(){
         this.active--
+        if(this.active === -1){
+            this.active = this.images.length - 1
+        }
       }
     }
   }).mount('#app')
