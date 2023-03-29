@@ -40,7 +40,7 @@
 
                     </button>
                     <!-- image list -->
-                    <img :class="index == active ? 'active': '' " :src="'./asset/' + image.image"  v-for="(image, index) in images" :alt="image.title">
+                    <img :class="index == active ? 'active': '' " :src="'./asset/' + image.image"  v-for="(image, index) in images" :alt="image.title" @click="active = index">
                 </div>
             </div>
         </div>
